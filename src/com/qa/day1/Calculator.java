@@ -11,7 +11,12 @@ public class Calculator {
 	public static int multiply(int a, int b) {
 		return(a * b);
 	}
-	public static double divide(double a, double b) {
-		return(a / b);
+	public static void divide(double a, double b) {
+		if (a >= b) {
+			System.out.println(a / b);
+		}
+		else {
+			System.out.println("Division cannot be performed");
 	}		
+}
 }
